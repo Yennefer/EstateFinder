@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">EstateFinder</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="action_edit">Редактировать</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_about">О программе</string>
+
+    <string name="title_activity_search">Настройки поиска</string>
+    <string name="title_activity_results">Результаты поиска</string>
+    <string name="title_activity_advert">Объявление</string>
+    <string name="title_activity_about">О программе</string>
+
+    <string name="btn_like_label">Понравилось</string>
+    <string name="btn_dislike_label">Не понравилось</string>
+    <string name="btn_save_label">Сохранить параметры поиска</string>
+
+    <string name="text_open_in_browser">Открыть объявление в браузере</string>
+    <string name="text_send_email_with">Отправить письмо с помощью:</string>
+    <string name="text_set_search_name">Задайте название для поискового запроса.</string>
+    <string name="text_like">Понравилось ли вам данное объявление? (на основании этой информации программа будет подбирать наиболее подходящие для вас объявления.)</string>
+    <string name="text_phone">%1$s, %2$s</string>
+
+    <string name="tv_category_text">Категория</string>
+    <string name="tv_type_text">Тип объявления</string>
+    <string name="tv_price_from_text">Цена, от</string>
+    <string name="tv_price_to_text">Цена, до</string>
+    <string name="tv_rub_text">руб.</string>
+    <string name="tv_district_text">Местоположение</string>
+    <string name="tv_lease_text">Срок аренды</string>
+    <string name="tv_city_text">Город</string>
+    <string name="tv_room_count_text">Количество комнат</string>
+    <string name="tv_object_type_text">Тип объекта</string>
+    <string name="tv_location_text">Местонахождение</string>
+    <string name="tv_search_name_text">Задайте название для поиска</string>
+    <string name="tv_results_count_text">Найдено:</string>
+    <string name="tv_room_in_apartment_text">Комнат в квартире</string>
+    <string name="tv_field_required_text">*</string>
+    <string name="tv_home_type_text">Тип объекта</string>
+    <string name="cb_photo_text">Искать только объявления с фото</string>
+    <string name="tv_about_text">Ваш персональный помощник \n в поиске недвижимости</string>
+    <string name="tv_email_text"><u>zakomoldinaav@gmail.com</u></string>
+    <string name="tv_version_text">Версия 1.0</string>
+    <string name="tv_districttext_text">р-н</string>
+</resources>

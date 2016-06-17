@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/tv_object_type_text"
+            android:textColor="@color/colorSecondaryText"
+            android:id="@+id/tvObjectType" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_field_required_text"
+            android:textColor="@color/colorRed"
+            android:id="@+id/tvObjectTypeRequired" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spObjectType" />
+
+        <View android:id="@+id/spObjectTypeOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/spObjectType"
+            android:layout_alignRight="@id/spObjectType"
+            android:layout_alignTop="@id/spObjectType"
+            android:layout_alignBottom="@id/spObjectType"
+            android:onClick="spinnerOverlayClick" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_location_text"
+            android:textColor="@color/colorSecondaryText"
+            android:id="@+id/tvLocation" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_field_required_text"
+            android:textColor="@color/colorRed"
+            android:id="@+id/tvLocationRequired" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spLocation" />
+
+        <View android:id="@+id/spLocationOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/spLocation"
+            android:layout_alignRight="@id/spLocation"
+            android:layout_alignTop="@id/spLocation"
+            android:layout_alignBottom="@id/spLocation"
+            android:onClick="spinnerOverlayClick" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="11dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yennefer.estatefinder.gui.SearchActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tv_category_text"
+                    android:textColor="@color/colorSecondaryText"
+                    android:id="@+id/tvCategory" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tv_field_required_text"
+                    android:textColor="@color/colorRed"
+                    android:id="@+id/tvCategoryRequired" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spCategory" />
+
+                <View android:id="@+id/spCategoryOverlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/spCategory"
+                    android:layout_alignRight="@id/spCategory"
+                    android:layout_alignTop="@id/spCategory"
+                    android:layout_alignBottom="@id/spCategory"
+                    android:onClick="spinnerOverlayClick" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tv_type_text"
+                    android:textColor="@color/colorSecondaryText"
+                    android:id="@+id/tvType" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tv_field_required_text"
+                    android:textColor="@color/colorRed"
+                    android:id="@+id/tvTypeRequired" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spAdType" />
+
+                <View android:id="@+id/spAdTypeOverlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/spAdType"
+                    android:layout_alignRight="@id/spAdType"
+                    android:layout_alignTop="@id/spAdType"
+                    android:layout_alignBottom="@id/spAdType"
+                    android:onClick="spinnerOverlayClick" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="0px"
+                android:layout_height="0px"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tvPriceFrom"
+                android:nextFocusUp="@id/tvPriceFrom"
+                android:nextFocusLeft="@id/tvPriceFrom"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tv_price_from_text"
+                android:textColor="@color/colorSecondaryText" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/etPriceFrom"
+                    android:maxLength="12"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/tv_rub_text"
+                    android:textColor="@color/colorPrimaryText"
+                    android:id="@+id/tvRub1"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/tv_price_to_text"
+                android:textColor="@color/colorSecondaryText"
+                android:id="@+id/tvPriceTo" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:maxLength="12"
+                    android:id="@+id/etPriceTo"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/tv_rub_text"
+                    android:textColor="@color/colorPrimaryText"
+                    android:id="@+id/tvRub2"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tv_district_text"
+                    android:textColor="@color/colorSecondaryText"
+                    android:id="@+id/tvDistrict" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tv_field_required_text"
+                    android:textColor="@color/colorRed"
+                    android:id="@+id/tvDistrictRequired" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spRegions" />
+
+                <View android:id="@+id/spRegionsOverlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/spRegions"
+                    android:layout_alignRight="@id/spRegions"
+                    android:layout_alignTop="@id/spRegions"
+                    android:layout_alignBottom="@id/spRegions"
+                    android:onClick="spinnerOverlayClick" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/contentCity"
+                layout="@layout/content_search_city"
+                android:layout_gravity="center_horizontal" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/contentLease"
+                layout="@layout/content_search_lease" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/contentRoomCount"
+                layout="@layout/content_search_room_count" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/contentHomeType"
+                layout="@layout/content_search_home_type" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/contentTypeAndLocation"
+                layout="@layout/content_search_type_and_location" />
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/cb_photo_text"
+                android:id="@+id/cbOnlyWithPhoto" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/tv_search_name_text"
+                    android:textColor="@color/colorSecondaryText"
+                    android:id="@+id/tvSearchName" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/tv_field_required_text"
+                    android:textColor="@color/colorRed"
+                    android:id="@+id/tvSearchNameRequired" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:maxLength="225"
+                android:id="@+id/etSearchName" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="?android:attr/buttonBarStyle">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/btn_save_label"
+                    android:id="@+id/btnSave"
+                    android:onClick="btnSaveClick"
+                    style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/tv_lease_text"
+            android:textColor="@color/colorSecondaryText"
+            android:id="@+id/tvLease" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_field_required_text"
+            android:textColor="@color/colorRed"
+            android:id="@+id/tvLeaseRequired" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spLease" />
+
+        <View android:id="@+id/spLeaseOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/spLease"
+            android:layout_alignRight="@id/spLease"
+            android:layout_alignTop="@id/spLease"
+            android:layout_alignBottom="@id/spLease"
+            android:onClick="spinnerOverlayClick" />
+    </RelativeLayout>
+</LinearLayout>

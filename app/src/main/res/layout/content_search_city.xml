@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/tv_city_text"
+            android:textColor="@color/colorSecondaryText"
+            android:id="@+id/tvCity" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_field_required_text"
+            android:textColor="@color/colorRed"
+            android:id="@+id/tvCityRequired" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spCity" />
+
+        <View android:id="@+id/spCityOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/spCity"
+            android:layout_alignRight="@id/spCity"
+            android:layout_alignTop="@id/spCity"
+            android:layout_alignBottom="@id/spCity"
+            android:onClick="spinnerOverlayClick" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/tv_home_type_text"
+            android:textColor="@color/colorSecondaryText"
+            android:id="@+id/tvHomeType" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="5dp"
+            android:text="@string/tv_field_required_text"
+            android:textColor="@color/colorRed"
+            android:id="@+id/tvHomeTypeRequired" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spHomeType" />
+
+        <View android:id="@+id/spHomeTypeOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/spHomeType"
+            android:layout_alignRight="@id/spHomeType"
+            android:layout_alignTop="@id/spHomeType"
+            android:layout_alignBottom="@id/spHomeType"
+            android:onClick="spinnerOverlayClick" />
+    </RelativeLayout>
+
+</LinearLayout>
